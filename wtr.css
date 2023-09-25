@@ -1,0 +1,88 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Poppins',sans-serif;}
+
+body{display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #eff0f4;}
+
+.container{position: relative;
+    justify-content: center;
+    align-items: center;}
+
+.container .drop{position: relative;
+width: 350px;
+height: 350px;
+box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+                25px 35px 20px rgba(0,0,0,0.05),
+                25px 30px 30px rgba(0,0,0,0.05),
+            inset -20px -20px  25px rgba(255,255,255,0.9);
+        transition: 0.5s;
+    border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+align-items:center;
+justify-content:center;}  
+
+.container .drop:hover{
+    border-radius: 50%;
+}
+.container .drop::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;;
+    background:#fff;
+    opacity:0.9;
+}
+.container .drop::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;;
+    background:#fff;
+    opacity:0.9;
+}
+.container .drop .content{
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    padding: 12%;
+}
+.container .drop .content .inputbox input{
+ margin: 5px;
+ height: 30px;
+ width: 190px;
+ background: #fff;
+border-radius: 7px;
+border: 0;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 30px -12px inset, rgba(0, 0, 0, 0.3) 0px 15px 26px -15px inset;
+}
+::placeholder{
+    color: rgb(22, 6, 48);
+    font-size: 19px;
+    font-weight: 100;
+    padding:5px;
+}
+.container .drop .content .inputbox input:hover{
+    width: 210px;
+}
+.button input{
+    height: 35px;
+    width: 65px;
+    margin-left: 57px;
+    border-radius: 7px;
+    border: 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background: #fff;
+}
+
